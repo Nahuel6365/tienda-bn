@@ -520,26 +520,6 @@ footer {
 
 @media (max-width:450px) {
 
-    /* Barra nav celular*/
-    header {
-        padding: 6px;
-        flex-direction: column;
-        gap: 0.5rem;
-        height: auto;
-        font-size: small;
-    }
-
-    a img {
-        height: 40px;
-    }
-
-    .boton {
-        padding: 8px;
-        height: auto;
-        background-color: rgb(219, 212, 212);
-        border-radius: 40px;
-    }
-
     /* hero celular */
     .hero {
         font-size: small;
