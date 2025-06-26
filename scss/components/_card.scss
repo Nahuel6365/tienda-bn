@@ -1,0 +1,18 @@
+.card {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid black;
+    transition: transform 0.3s;
+    font-size: large;
+
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    }
+}

@@ -1,0 +1,19 @@
+.redes {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    transition: transform 0.3s;
+    z-index: 3;
+
+    img {
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+        border: 1px solid black;
+
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}

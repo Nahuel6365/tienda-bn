@@ -1,0 +1,23 @@
+.contenedor-historia {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 10px 80px 10px 80px;
+    padding: 30px;
+    background-color: grey;
+
+    .historia {
+        display: flex;
+        gap: 2rem;
+        height: 300px;
+        padding: 30px;
+        background-color: rgb(245, 239, 239);
+        align-items: center;
+        text-align: start;
+
+        img {
+            height: 100%;
+            width: 150%;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.oportunidades {
+    margin: 40px 0 50px 0;
+    text-align: center;
+
+    .contenedor-oportunidades {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+}

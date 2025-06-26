@@ -1,0 +1,24 @@
+header {
+    nav {
+        background-color: aqua;
+
+        .navbar-brand {
+            img {
+                border: 1px solid black;
+                border-radius: 100%;
+            }
+        }
+
+        .nav-link {
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        .btn {
+            border-radius: 20px;
+        }
+    }
+}
