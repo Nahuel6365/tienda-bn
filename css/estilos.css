@@ -14,11 +14,11 @@ h2 {
   text-transform: uppercase;
 }
 
-header nav {
-  background-color: aqua;
+header {
+  background-color: black;
 }
 header nav .navbar-brand img {
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 100%;
 }
 header nav .nav-link {
@@ -29,6 +29,8 @@ header nav .nav-link:hover {
 }
 header nav .btn {
   border-radius: 20px;
+  background-color: gray;
+  border: 1px solid gray;
 }
 
 .hero {
@@ -74,7 +76,7 @@ header nav .btn {
 }
 .card img {
   width: 100%;
-  height: auto;
+  height: 280px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -96,7 +98,7 @@ header nav .btn {
 .contenedor-quienes-somos {
   display: flex;
   flex-direction: column;
-  background-color: grey;
+  background-color: gray;
   gap: 1rem;
   margin: 10px 80px 10px 80px;
   padding: 30px;
@@ -112,7 +114,6 @@ header nav .btn {
 .contenedor-quienes-somos .nosotros {
   display: flex;
   gap: 1rem;
-  background-color: grey;
 }
 .contenedor-quienes-somos .nosotros .carta-nosotros {
   background-color: rgb(245, 239, 239);
@@ -160,7 +161,7 @@ header nav .btn {
   gap: 2rem;
   margin: 10px 80px 10px 80px;
   padding: 30px;
-  background-color: grey;
+  background-color: gray;
 }
 .contenedor-historia .historia {
   display: flex;
@@ -189,7 +190,7 @@ header nav .btn {
 .contacto .contenedor-contacto .escribinos {
   width: 49%;
   padding: 10px;
-  background-color: rgba(106, 102, 102, 0.574);
+  background-color: gray;
 }
 .contacto .contenedor-contacto .escribinos form {
   display: flex;
@@ -198,7 +199,7 @@ header nav .btn {
   align-items: center;
   gap: 0.5rem;
 }
-.contacto .contenedor-contacto .escribinos form .button {
+.contacto .contenedor-contacto .escribinos form button {
   background-color: aqua;
   text-transform: uppercase;
   width: 100px;
@@ -206,14 +207,14 @@ header nav .btn {
   border-radius: 10px;
   transition: transform 0.3s;
 }
-.contacto .contenedor-contacto .escribinos form .button:hover {
+.contacto .contenedor-contacto .escribinos form button:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
 .contacto .contenedor-contacto .visitanos {
   width: 49%;
   padding: 10px;
-  background-color: rgba(106, 102, 102, 0.574);
+  background-color: gray;
 }
 .contacto .contenedor-contacto .visitanos iframe {
   width: 100%;
@@ -221,7 +222,8 @@ header nav .btn {
 }
 
 footer {
-  background: aqua;
+  background: black;
+  color: white;
   height: 70px;
   padding: 5px;
   bottom: 0;
@@ -244,6 +246,266 @@ footer {
 .redes img:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  /* Seccion oportunidades y tienda medio grande */
+  .contenedor-oportunidades {
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+  .card {
+    height: auto;
+    width: 250px;
+    padding: 5px;
+  }
+  .card img {
+    height: 240px;
+  }
+  /* seccion quienes somos medio grande */
+  .contenedor-quienes-somos {
+    margin: 10px 60px 10px 60px;
+    padding: 20px;
+    font-size: smaller;
+  }
+  .contenedor-quienes-somos .quienes-somos {
+    padding: 25px;
+    gap: 2rem;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 230px 230px 230px;
+    gap: 1rem;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-1 {
+    grid-column: 1/4;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-2 {
+    grid-column: 4/6;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-3 {
+    grid-column: 1/3;
+    grid-row: 2/4;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-4 {
+    grid-column: 3/6;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-5 {
+    grid-column: 3;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-6 {
+    grid-column: 4/6;
+  }
+  /*Historia medio grande*/
+  .contenedor-historia {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 10px 60px 10px 60px;
+    padding: 25px;
+  }
+  .contenedor-historia .historia {
+    padding: 25px;
+  }
+}
+/* adaptacion media chica (tablets vertical) */
+@media (min-width: 450px) and (max-width: 800px) {
+  /* hero medio chico */
+  .hero .primera-hero {
+    width: 100%;
+  }
+  .hero .segunda-hero {
+    width: 0%;
+  }
+  /* oportunidades y tienda medio chico */
+  .contenedor-oportunidades {
+    gap: 0.5rem;
+  }
+  .card {
+    height: auto;
+    width: 200px;
+    padding: 5px;
+  }
+  .card img {
+    height: 190px;
+  }
+  /*seccion quienes somos medio chico*/
+  .contenedor-quienes-somos {
+    margin: 10px 30px 10px 30px;
+    padding: 15px;
+    font-size: small;
+  }
+  .contenedor-quienes-somos .quienes-somos {
+    padding: 20px;
+    gap: 1.5rem;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .contenedor-quienes-somos .nosotros {
+    flex-wrap: wrap;
+    gap: 4%;
+    justify-content: center;
+  }
+  .contenedor-quienes-somos .nosotros .carta-nosotros {
+    padding: 8px;
+    width: 48%;
+    margin-bottom: 10px;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px 200px 200px;
+    gap: 1rem;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-1 {
+    grid-column: 1/3;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-3 {
+    grid-column: 1;
+    grid-row: 2/4;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-2 {
+    grid-column: 2;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-4 {
+    grid-column: 2;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-5 {
+    grid-column: 1;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-6 {
+    grid-column: 2;
+  }
+  /*Historia medio chico*/
+  .contenedor-historia {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 10px 20px 10px 20px;
+    padding: 15px;
+  }
+  .contenedor-historia .historia {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    height: auto;
+    padding: 15px;
+    font-size: smaller;
+  }
+  .contenedor-historia .historia img {
+    height: auto;
+    width: 50%;
+  }
+  /* contacto medio chico*/
+  .contacto .contenedor-contacto {
+    flex-direction: column;
+  }
+  .contacto .contenedor-contacto .escribinos {
+    width: 100%;
+  }
+  .contacto .contenedor-contacto .visitanos {
+    width: 100%;
+  }
+}
+/* adaptacion celular */
+@media (max-width: 450px) {
+  /* hero celular */
+  .hero {
+    font-size: small;
+  }
+  .hero .primera-hero {
+    width: 100%;
+  }
+  .hero .segunda-hero {
+    width: 0%;
+  }
+  /* oportunidades celu */
+  .contenedor-oportunidades {
+    gap: 1rem;
+  }
+  .card {
+    height: auto;
+    width: 170px;
+    padding: 5px;
+  }
+  .card img {
+    height: 160px;
+  }
+  /* seccion quienes somos celular */
+  .contenedor-quienes-somos {
+    margin: 10px 15px 10px 15px;
+    padding: 10px;
+    font-size: small;
+  }
+  .contenedor-quienes-somos .quienes-somos {
+    padding: 15px;
+    gap: 1rem;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .contenedor-quienes-somos .nosotros {
+    flex-wrap: wrap;
+    gap: 4%;
+    justify-content: center;
+  }
+  .contenedor-quienes-somos .nosotros .carta-nosotros {
+    padding: 8px;
+    width: 48%;
+    margin-bottom: 10px;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px;
+    gap: 1rem;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-1 {
+    grid-column: 1/3;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-3 {
+    grid-column: 1;
+    grid-row: 2/4;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-2 {
+    grid-column: 2;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-4 {
+    grid-column: 2;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-5 {
+    grid-column: 1;
+  }
+  .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria .grid-item-6 {
+    grid-column: 2;
+  }
+  /*Historia celular*/
+  .contenedor-historia {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 10px 10px 10px 10px;
+    padding: 15px;
+  }
+  .contenedor-historia .historia {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    height: auto;
+    padding: 10px;
+    font-size: small;
+  }
+  .contenedor-historia .historia img {
+    height: auto;
+    width: 50%;
+  }
+  /* contacto celular*/
+  .contacto .contenedor-contacto {
+    flex-direction: column;
+    padding: 5px;
+    font-size: small;
+  }
+  .contacto .contenedor-contacto .escribinos {
+    width: 100%;
+  }
+  .contacto .contenedor-contacto .visitanos {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

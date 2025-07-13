@@ -11,7 +11,7 @@
         .escribinos {
             width: 49%;
             padding: 10px;
-            background-color: rgba(106, 102, 102, 0.574);
+            background-color: gray;
 
             form {
                 display: flex;
@@ -20,7 +20,7 @@
                 align-items: center;
                 gap: 0.5rem;
 
-                .button {
+                button {
                     background-color: aqua;
                     text-transform: uppercase;
                     width: 100px;
@@ -39,7 +39,7 @@
         .visitanos {
             width: 49%;
             padding: 10px;
-            background-color: rgba(106, 102, 102, 0.574);
+            background-color: gray;
 
             iframe {
                 width: 100%;

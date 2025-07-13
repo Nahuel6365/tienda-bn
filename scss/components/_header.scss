@@ -1,10 +1,9 @@
 header {
+    background-color: black;
     nav {
-        background-color: aqua;
-
         .navbar-brand {
             img {
-                border: 1px solid black;
+                border: 1px solid white;
                 border-radius: 100%;
             }
         }
@@ -19,6 +18,8 @@ header {
 
         .btn {
             border-radius: 20px;
+            background-color: gray;
+            border: 1px solid gray;
         }
     }
 }
