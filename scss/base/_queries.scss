@@ -28,7 +28,19 @@
 
         }
 
-        .nosotros{}
+        .nosotros {
+            flex-wrap: wrap;
+            gap: 2%;
+            justify-content: center;
+            .carta-nosotros {
+                padding: 8px;
+                width: 49%;
+                margin-bottom: 10px;
+                img{
+                    height: 180px;
+                }
+            }
+        }
 
         .un-poco-de-lo-nuestro {
             .galeria {
@@ -131,6 +143,9 @@
                 padding: 8px;
                 width: 48%;
                 margin-bottom: 10px;
+                img{
+                    height: 165px;
+                }
             }
         }
         .un-poco-de-lo-nuestro{
@@ -253,6 +268,9 @@
                 padding: 8px;
                 width: 48%;
                 margin-bottom: 10px;
+                img{
+                    height: 150px;
+                }
             }
         }
         .un-poco-de-lo-nuestro{

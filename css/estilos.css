@@ -118,12 +118,13 @@ header nav .btn {
 .contenedor-quienes-somos .nosotros .carta-nosotros {
   background-color: rgb(245, 239, 239);
   padding: 10px;
+  width: 25%;
   text-align: center;
   border-radius: 10px;
 }
 .contenedor-quienes-somos .nosotros .carta-nosotros img {
   width: 100%;
-  height: auto;
+  height: 200px;
   border-radius: 10px;
 }
 .contenedor-quienes-somos .un-poco-de-lo-nuestro {
@@ -272,6 +273,19 @@ footer {
     padding: 25px;
     gap: 2rem;
   }
+  .contenedor-quienes-somos .nosotros {
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+  }
+  .contenedor-quienes-somos .nosotros .carta-nosotros {
+    padding: 8px;
+    width: 49%;
+    margin-bottom: 10px;
+  }
+  .contenedor-quienes-somos .nosotros .carta-nosotros img {
+    height: 180px;
+  }
   .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 230px 230px 230px;
@@ -350,6 +364,9 @@ footer {
     padding: 8px;
     width: 48%;
     margin-bottom: 10px;
+  }
+  .contenedor-quienes-somos .nosotros .carta-nosotros img {
+    height: 165px;
   }
   .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria {
     grid-template-columns: 1fr 1fr;
@@ -450,6 +467,9 @@ footer {
     padding: 8px;
     width: 48%;
     margin-bottom: 10px;
+  }
+  .contenedor-quienes-somos .nosotros .carta-nosotros img {
+    height: 150px;
   }
   .contenedor-quienes-somos .un-poco-de-lo-nuestro .galeria {
     grid-template-columns: 1fr 1fr;
